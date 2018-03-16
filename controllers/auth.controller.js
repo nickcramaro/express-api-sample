@@ -19,7 +19,7 @@ exports.authRequired = (req, res, next) => {
         next();
     } else {
         res
-            .status(403)
+            .status(401)
             .send({error: 'FAIL'});
     }
 }
